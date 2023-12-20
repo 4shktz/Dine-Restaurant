@@ -3,31 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <meta name="description" content="This is an entertainement website">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-    <title>Frontend Mentor | Dine Website Challenge</title>
+    <title>Dine Restaurant</title>
 </head>
 <body>
-    <!-- pb-36 -->
-    <header class="w-screen bg-hero-mobile flex flex-col items-center no-repeat bg-cover pb-36 md:bg-hero-tablet lg:bg-hero-desktop lg:items-start lg:bg-right">
-        <div class=" w-10/12 mt-64 text-center flex flex-col items-center md:mt-96 lg:w-6/12 lg:items-start lg:mt-20 lg:ml-20 xl:ml-40 xl:w-4/12">
+    <!--BUG HERE -->
+    <header class="w-screen h-screen bg-hero-mobile flex flex-col items-center no-repeat bg-cover md:bg-hero-tablet lg:bg-hero-desktop lg:items-start lg:bg-right bg-cod-gray">
+        <section class="w-10/12 mt-64 text-center flex flex-col items-center md:mt-96 lg:w-6/12 lg:items-start lg:mt-20 lg:ml-20 xl:ml-40 xl:w-4/12">
             <img src="images/logo.svg" alt="logo" class="w-30 object-contain mb-12 lg:mb-36">
-            <h1 class="text-white text-4xl font-extra-light mb-6 md:text-5xl w-4/6 lg:text-left lg:text-6xl lg:w-5/6 lg:mb-10">
+            <h2 class="text-white text-4xl font-extra-light mb-6 md:text-5xl w-4/6 lg:text-left lg:text-6xl lg:w-5/6 lg:mb-10">
                 Exquisite dining since 1989
-            </h1>
+            </h2>
             <p class="text-white font-extra-light mb-8 md:text-xl lg:text-left lg:w-4/6 lg:mb-10">
                 Experience our seasonal menu in beautiful country surroundings. Eat
                 the freshest produce from the comfort of our farmhouse.
             </p>
-            <a href="booking.html">
-                <div class="border-white border-solid border py-5 px-14 hover:bg-white hover:text-black transition-all cursor-pointer text-white">
-                    <p class="uppercase font-medium text-md hover:text-black">
-                        Book a table
-                    </p>
-                </div>
+            <a href="booking.html" class="border-white border-solid border py-5 px-14 hover:bg-white hover:text-black transition-all text-white">
+                <p class="uppercase font-medium text-md hover:text-black">
+                    Book a table
+                </p>
             </a>
-        </div>
+        </section>
     </header>
+    <section class="w-screen flex flex-col items-center relative pb-10"> <!-- bug here-->                 <!-- retirer absolute par relative -->
+        <!-- <img src="images/patterns/pattern-curve-top-left.svg" alt="curve" class="object-contain hidden md:block w-full absolute -left-96 top-56 z-0 lg:w-3/6 lg:top-0 rounded-lg">
+        <img src="images/patterns/pattern-curve-bottom-right.svg" alt="curve" class="object-contain hidden md:block w-full absolute -right-96 bottom-0 z-0 lg:w-3/6 xl:w-3/6 lg:-right-60"> -->
+        <article class="flex flex-col items-center lg:flex-row lg:justify-around lg:w-11/12 lg:mb-40 xl:w-7/12 xl:justify-center">
+            <!-- <picture>
+                <source media="(min-width: 1024px)" srcset="images/homepage/enjoyable-place-desktop.jpg" class="object-contain -mt-20 shadow-2xl block w-10/12 lg:w-96 lg:left-24 xl:mr-40">
+                <source media="(min-width: 768px)" srcset="images/homepage/enjoyable-place-tablet.jpg" class="object-contain hidden -mt-20 shadow-2xl w-10/12 lg:w-96 lg:left-24 xl:mr-40">
+                <source media="(max-width: 767px)" srcset="images/homepage/enjoyable-place-mobile.jpg" class="object-contain -mt-20 shadow-2xl lg:block w-11/12 lg:w-96 lg:left-24 xl:mr-40">
+                <img src="images/homepage/enjoyable-place-mobile.jpg" alt="place" class="object-contain -mt-20 shadow-2xl block w-10/12 lg:w-96 lg:left-24 xl:mr-40">
+            </picture> -->
+            <img src="images/homepage/enjoyable-place-desktop.jpg" alt="place" class="object-contain hidden md:hidden -mt-10 shadow-2xl lg:block w-11/12 lg:w-96 lg:left-24 xl:mr-40">
+            <img src="images/homepage/enjoyable-place-mobile.jpg" alt="place" class="object-contain md:hidden lg:hidden -mt-20 shadow-2xl block w-10/12 lg:w-96 lg:left-24 xl:mr-40">
+            <img src="images/homepage/enjoyable-place-tablet.jpg" alt="place" class="object-contain hidden lg:hidden -mt-20 shadow-2xl md:block w-10/12 lg:w-96 lg:left-24 xl:mr-40">
+            <article class="text-center flex flex-col items center mt-10 w-11/12 mb-16 md:w-7/12 lg:w-4/12 lg:mt-20">
+                <img src="images/patterns/pattern-divide.svg" alt="divide" class="object-contain w-20 mx-auto mb-10 lg:mt-0 xl:mx-0">
+                <h2 class="text-4xl font-bold mb-5 lg:text-left">
+                    Enjoyable place for all the family
+                </h2>
+                <p class="lg:text-left">
+                    Our relaxed surroundings make dining with us a great experience for
+                    everyone. We can even arrange a tour of the farm before your meal.
+                </p>
+            </article>
+        </article>
+        <article class="flex flex-col items-center lg:flex-row-reverse lg:w-11/12 lg:justify-around xl:w-7/12 xl:justify-center">
+            <div class="flex flex-col items-center relative md:w-10/12 lg:w-max">
+                <img src="images/patterns/pattern-lines.svg" alt="line" class="absolute hidden md:block md:-right-10 bottom-16 lg:-right-20">
+                <img src=images/homepage/locally-sourced-desktop.jpg alt="image" class="object-contain hidden md:hidden lg:inline-block shadow-2xl w-96 lg:-mb-48 xl:ml-40 xl:-mb-20">
+                <img src=images/homepage/locally-sourced-mobile.jpg alt="image" class="object-contain md:hidden lg:hidden shadow-2xl w-80 lg:-mb-20 xl:ml-40">
+                <img src=images/homepage/locally-sourced-tablet.jpg alt="image" class="object-contain hidden md:inline-block lg:hidden shadow-2xl w-96 lg:-mb-20 xl:ml-40 md:w-full">
+            </div>
+            <article class="text-center mt-10 w-11/12 mb-16 md:w-7/12 lg:w-4/12">
+                <img src="images/patterns/pattern-divide.svg" alt="divide" class="object-contain w-20 mt-8 mb-10 mx-auto xl:mx-0">
+                <h2 class="text-4xl font-bold mb-5 lg:text-left">
+                    The most locally sourced food
+                </h2>
+                <p class="lg:text-left">
+                    All our ingredients come directly from our farm or local fishery. 
+                    So you can be sure that you&rsquo;re eating the freshest, most sustainable food.
+                </p>
+            </article>
+        </article>
+    </section>
+    <!--BUG ENDS HERE-->
+    <section class="flex flex-col items-center bg-black pb-10 lg:flex-row lg:items-start lg:pt-40 lg:justify-between xl:justify-center w-full">
+        <article class="text-center mt-10 w-11/12 mb-14 text-white md:w-7/12 lg:mt-0 lg:mr-20 lg:ml-20 lg:w-10/12 xl:w-3/12">
+            <img src="images/patterns/pattern-divide.svg" alt="divide" class="object-contain w-20 mt-16 mx-auto mb-10 lg:mt-0 lg:mb-10 lg:mx-0">
+            <h2 class="font-bold mb-5 text-4xl lg:text-left">
+                A few highlights from our menu
+            </h2>
+            <p class="font-extra-light lg:text-left">
+                We cater for all dietary requirements, but here&rsquo;s a glimpse at some of
+                our diner&rsquo;s favourites. Our menu is revamped every season.
+            </p>
+        </article>
+        <article class="lg:mr-20 md:flex md:flex-col md:items-center">
+            <article class="text-white flex flex-col items-center text-center pb-10 md:flex-row md:text-left md:w-8/12 md:items-start lg:w-full">
+                <div>
+                    <img src="images/homepage/salmon-mobile.jpg" alt="salmon" class="object-contain w-full mb-8 md:w-9/12 z-0 lg:w-8/12">
+                </div>
+                <article class="w-8/12 mt-5 lg:mt-0 xl:w-6/12">
+                    <h3 class="font-bold text-lg mb-2">Seared Salmon Fillet</h3>
+                    <p class="font-extra-light text-center md:text-left">
+                        Our locally sourced salmon served with a refreshing buckwheat summer salad.
+                    </p>
+                </article>
+            </article>
+            <hr class="mx-auto w-11/12 md:w-8/12 lg:w-full opacity-20">
+            <article class="flex flex-col items-center text-center text-white mt-10 pb-10 md:flex-row md:text-left md:w-8/12 md:items-start md:mt-10 lg:w-full">
+                <div>
+                    <img src="images/homepage/beef-mobile.jpg" alt="beef" class="object-contain w-full mb-8 md:w-9/12 lg:w-8/12">
+                </div>
+                <article class="w-8/12 mt-5 lg:mt-0 xl:w-6/12">
+                    <h3 class="mb-2 font-bold text-lg">Rosemary Filet Mignon</h3>
+                    <p class="font-extra-light text-center md:text-left">
+                        Our prime beef served to your taste with a delicious choice of seasonal sides.
+                    </p>
+                </article>
+            </article>
+            <hr class="mx-auto w-11/12 md:w-8/12 lg:w-full opacity-20">
+            <article class="flex flex-col items-center mt-10 text-center pb-10 text-white md:flex-row md:text-left md:w-8/12 md:items-start md:mt-10 lg:w-full">
+                <div>
+                    <img src="images/homepage/chocolate-mobile.jpg" alt="chocolate" class="object-contain w-full mb-8 md:w-9/12 lg:w-8/12">
+                </div>
+  
+                <article class="flex flex-col items-center w-10/12 md:w-8/12 xl:w-6/12 xl:items-start">
+                    <h3 class="font-bold text-lg mb-2 xl:text-left">
+                        Summer Fruit Chocolate Mousse
+                    </h3>
+                    <p class="font-extra-light text-center md:text-left ">
+                        Creamy mousse combined with summer fruits and dark chocolate shavings.
+                    </p>
+                </article>
+            </article>
+        </article>
+    </section>
+    <section class="w-full flex flex-col items-center relative">
+        <img src="images/patterns/pattern-curve-top-left.svg" alt="curve" class="object-contain w-full absolute hidden md:block -left-96 top-0 z-0 rounded-3xl xl:w-6/12">
+        <section class="flex flex-col items-center lg:flex lg:justify-around lg:flex-row lg:w-full lg:py-20 xl:justify-center xl:w-9/12">
+            <figure class="relative lg:h-full lg:ml-20">
+                <img src="images/patterns/pattern-lines.svg" alt="line" class="absolute hidden md:block top-7 -left-16">
+                <img src="images/homepage/family-gathering-mobile.jpg" alt="family-gathering" class="shadow-2xl md:hidden lg:hidden mt-16 mb-10">
+                <img src="images/homepage/family-gathering-tablet.jpg" alt="family-gathering" class="shadow-2xl hidden md:inline-block lg:hidden mt-16 mb-10">
+                <img src="images/homepage/family-gathering-desktop.jpg" alt="family-gathering" class="shadow-2xl hidden md:hidden lg:inline-block mt-16 mb-10">
+            </figure>            
+            <article class="flex flex-col items-center lg:flex lg:flex-col-reverse lg:w-4/6 lg:ml-28 lg:h-full xl:ml-56 lg:items-start">
+                <ul class="text-center md:flex md:w-11/12 md:justify-around lg:flex-col lg:items-start lg:mb-10 ">
+                    <li class="border-solid mb-3 font-semibold uppercase tracking-widest cursor-pointer hover:opacity-60">
+                        Family Gathering
+                    </li>
+                    <li class="mb-3 font-semibold uppercase tracking-widest opacity-60 cursor-pointer hover:opacity-100">
+                        Special Events
+                    </li>
+                    <li class="font-semibold uppercase tracking-widest opacity-60 cursor-pointer hover:opacity-100">
+                        Social Events
+                    </li>
+                </ul>
+                <article class="text-center mt-10 w-11/12 mb-14 md:w-6/12 md:mb-10 lg:w-5/6 lg:mt-20 xl:w-5/6">
+                    <h2 class="mb-5 font-bold text-3xl md:text-4xl lg:text-left">
+                        Family Gathering
+                    </h2>
+                    <p class="lg:text-left lg:mb-10 mb-10 md:text-xl font-normal">
+                        We love catering for entire families. So please bring everyone along
+                        for a special meal with your loved ones.
+                        We&rsquo;ll provide a memorable experience for all.
+                    </p>
+              
+                    <a href="booking.html">
+                        <div class="bg-black py-5 px-16 mb-10 text-white lg:px-10 lg:mb-0 xl:px-10 xl:w-1/2 hover:bg-white hover:text-black border border-solid hover:border-black cursor-pointer transition-all">
+                            <p class="uppercase font-medium tracking-wide">
+                                Book a table
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </article>
+        </section>
+  
+        <section class="bg-ready-mobile w-full flex flex-col items-center bg-cover md:bg-ready-tablet lg:flex-row lg:items-center lg:justify-around lg:py-20 lg:bg-ready-desktop">
+            <h3 class="text-white font-bold text-4xl text-center pt-20 pb-6 lg:text-3xl lg:pt-10">
+                Ready to make a reservation?
+            </h3>
+            <a href="booking.html" class="py-5 px-16 border border-solid border-white mb-20 lg:mb-0 hover:bg-white hover:text-black transition-all cursor-pointer text-white">
+                <p class="font-medium uppercase tracking-wide">
+                    Book a table
+                </p>
+            </a>
+        </section>
+    </section>
+    <footer class="flex flex-col items-center md:flex-row xl:justify-center lg:relative lg:bottom-0 md:mx-auto md:items-start pb-20 md:pt-16 md:pl-14 lg:pb-10 bg-black text-white">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="logo" class="object-contain mb-10 pt-16 md:pt-0 md:pr-32 w-30">
+        </a>
+        <section class="flex flex-col items-center md:items-start lg:flex-row lg:justify-center">
+            <address class="flex flex-col items-center md:items-start ">
+                <p class="font-light uppercase text-sm tracking-widest w-4/6 text-center mb-2 md:text-left md:w-5/6 ">Marthwaite, Sedbergh Cumbria</p>
+                <p class="font-light uppercase text-sm tracking-widest mb-10 md:text-left">+00 44 123 4567</p>
+            </address>            
+            <time class="flex flex-col items-center md:items-start">
+                <p class="font-light text-sm uppercase tracking-widest mb-2">Open Times</p>
+                <p class="font-light text-sm uppercase tracking-widest">Mon - Fri: <time datetime="09:00">9:00 AM</time> - <time datetime="22:00">10:00 PM</time></p>
+                <p class="font-light text-sm uppercase tracking-widest">Sat - Sun: <time datetime="09:00">9:00 AM</time> - <time datetime="23:30">11:30 PM</time></p>
+            </time>
+        </section>
+    </footer>
 </body>
 </html>

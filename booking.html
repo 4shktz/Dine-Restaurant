@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Dine Website Challenge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Dine Restaurant</title>
 </head>
 <body>
+    <header class="flex flex-col items-center bg-hero-mobile-booking md:bg-hero-tablet-booking lg:bg-hero-desktop-booking bg-cover bg-center bg-no-repeat z-0 ">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="logo" class="object-contain mb-10 pt-10 w-30">
+        </a>
+        <section class="flex flex-col items-center w-5/6 pb-48 md:w-4/6 lg:w-3/6 text-white text-center">
+            <h2 class="mb-5 font-light text-5xl">Reservations</h2>
+            <p class="font-light text-md lg:text-lg">
+                We can&rsquo;t wait to host you. If you have any special requirements please
+                feel free to call on the phone number below. We&rsquo;ll be happy to accommodate you.
+            </p>
+        </section>
+    </header>
+    <section class="xl:h-4/6 flex justify-center items-start">
+        <form action="#" class="flex flex-col items-center pb-20 w-5/6 mx-auto -mt-32 z-1 mb-40 lg:w-4/6 xl:w-3/6 bg-white shadow-2xl">
+            <input type="text" placeholder="Name" class="w-5/6 p-3 border-b border-solid border-gray-400 text-lg mb-5 mt-5 focus:outline-none" required title="This field is required">
+            <input type="email" placeholder="Email" class="w-5/6 p-3 border-b border-solid border-gray-400 text-lg mb-5 focus:outline-none" required title="This field is required">
+            <label for="date" class="w-5/6 text-lg">Pick a date</label>
+            <input type="date" class="w-5/6 p-3 border-b border-solid border-gray-400 text-lg mb-5 focus:outline-none uppercase" name="date" required title="This field is incomplete">
+            <label for="time" class="w-5/6 text-lg">Pick a time</label>
+            <input type="time" name="time" class="w-5/6 p-3 border-b border-solid border-gray-400 text-lg mb-8 focus:outline-none" required title="This field is incomplete">
+            <input type="text" value="4 people" class="w-5/6 p-3 border-b border-solid border-gray-400 text-lg mb-8 focus:outline-none">
+            <input type="submit" value="Make Reservation" class="w-5/6 text-white bg-black py-5 px-8 text-center uppercase tracking-widest font-medium hover:bg-white hover:text-black transition-all border-black border-solid border">
+        </form>
+    </section>
 
-  Reservations
+    <img src="images/patterns/pattern-lines.svg" alt="line">
 
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
-
-
-
-  Name
-  Email
-  Pick a date
-  Pick a time
-
-  Make Reservation
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
+    <footer class="flex flex-col items-center md:flex-row xl:justify-center lg:relative lg:bottom-0 md:mx-auto md:items-start pb-20 md:pt-16 md:pl-14 lg:pb-10 bg-black text-white">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="logo" class="object-contain mb-10 pt-16 md:pt-0 md:pr-32 w-30">
+        </a>
+        <section class="flex flex-col items-center md:items-start lg:flex-row lg:justify-center">
+            <address class="flex flex-col items-center md:items-start ">
+                <p class="font-light uppercase text-sm tracking-widest w-4/6 text-center mb-2 md:text-left md:w-5/6 ">Marthwaite, Sedbergh Cumbria</p>
+                <p class="font-light uppercase text-sm tracking-widest mb-10 md:text-left">+00 44 123 4567</p>
+            </address>            
+            <time class="flex flex-col items-center md:items-start">
+                <p class="font-light text-sm uppercase tracking-widest mb-2">Open Times</p>
+                <p class="font-light text-sm uppercase tracking-widest">Mon - Fri: <time datetime="09:00">9:00 AM</time> - <time datetime="22:00">10:00 PM</time></p>
+                <p class="font-light text-sm uppercase tracking-widest">Sat - Sun: <time datetime="09:00">9:00 AM</time> - <time datetime="23:30">11:30 PM</time></p>
+            </time>
+        </section>
+    </footer>
 </body>
 </html>
